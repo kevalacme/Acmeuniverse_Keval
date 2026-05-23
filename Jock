@@ -1,0 +1,50 @@
+## 📋 Description
+This PR adds a complete Random Joke Generator feature to the ACMEuniverse mobile app. Users can generate random jokes, filter by type, and save their favorites.
+
+## ✨ Features Added
+- **Joke Generator Screen**: Display random jokes with setup and punchline
+- **Joke Type Filter**: Filter jokes by type (random, general, knock-knock, programming)
+- **External API Integration**: Using Official Joke API (https://official-joke-api.appspot.com)
+- **Favorites System**: Save and manage favorite jokes
+- **Favorites Screen**: View all saved favorite jokes
+- **Home Screen**: Navigation hub for app features
+- **Error Handling**: Proper error messages and loading states
+- **Modern UI**: Material Design with responsive layouts
+
+## 🔧 What Changed
+- Added `lib/models/joke_model.dart` - Joke data model
+- Added `lib/services/joke_service.dart` - API service for fetching jokes
+- Added `lib/screens/joke_generator_screen.dart` - Main joke generator UI
+- Added `lib/screens/home_screen.dart` - Home screen with navigation
+
+## 🎯 How It Works
+1. User selects joke type from dropdown
+2. App fetches joke from external API
+3. Display setup and punchline
+4. User can favorite jokes
+5. View all favorites in separate screen
+
+## 🧪 Testing
+- ✅ Load random jokes
+- ✅ Filter by joke type
+- ✅ Add/remove favorites
+- ✅ View favorites list
+- ✅ Error handling when API is down
+- ✅ Loading states display correctly
+
+## 📸 Screenshots/Demo
+(Optional - add if you have them)
+
+## 🔗 Related Issues
+Fixes #(issue number if applicable)
+
+## 📚 Dependencies Used
+- `http: ^1.1.0` - For API calls
+- `shared_preferences: ^2.2.0` - For local storage
+
+## ✅ Checklist
+- [x] Code follows project style guidelines
+- [x] Comments added for complex logic
+- [x] No breaking changes
+- [x] Tested on emulator
+- [x] Error handling implemented
